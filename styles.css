@@ -30,3 +30,60 @@ html {
     background-color: rgba(193, 35, 35, 0.64);
     color: black;
   }
+}
+
+/*Author: Abraham Aguilar*/
+
+/*Body*/
+
+body {
+  width: 80%;
+  min-width: 600px;
+  margin: 0px auto;
+}
+
+/*Header*/
+
+header {
+  font-size: 50px;
+  color: rgb(79, 194, 236);
+  font-style: italic;
+  font-family: cursive;
+}
+
+/*Article*/
+
+article {
+  padding: 0px 10px;
+}
+
+article.right {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background-color: rgb(152, 159, 235);
+  border: 3px solid rgb(110, 120, 244);
+  border-radius: 20px;
+}
+
+/*Image*/
+
+img.side {
+  width: 100%;
+}
+
+img.article {
+  width: 30%;
+  float: left;
+  padding: 0px 10px;
+}
+
+/*Footer*/
+
+footer {
+  font-family: cursive;
+  background-color: rgb(37, 146, 217);
+  border: 5px dashed rgb(10, 109, 173);
+  border-radius: 10px;
+  padding: 5px;
+}
