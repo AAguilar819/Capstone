@@ -7,11 +7,20 @@ html {
     width: 100%;
     background: linear-gradient(to right, #8AEABA, rgba(255, 255, 255, 0.00));
     display: block;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
 }
 
 
 /*Author: Abraham Aguilar*/
+
+
+/*Nav*/
+
+.topnav a {
+    text-decoration: none;
+    color: seagreen;
+    padding: 0px 10px;
+}
 
 
 /*Body*/
@@ -30,7 +39,7 @@ header {
     font-size: 50px;
     color: rgb(79, 194, 236);
     font-style: italic;
-    font-family: cursive;
+    font-family: 'Adamina';
 }
 
 
@@ -52,6 +61,12 @@ article.right {
 
 /*Image*/
 
+
+/* img.logo {
+    display: block;
+    width: 250px;
+} */
+
 img.side {
     width: 100%;
 }
@@ -66,7 +81,8 @@ img.article {
 /*Footer*/
 
 footer {
-    font-family: cursive;
+    font-family: 'Adamina';
+    font-style: italic;
     background-color: rgb(90, 169, 220);
     border: 5px dashed rgb(10, 109, 173);
     border-radius: 10px;
