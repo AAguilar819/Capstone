@@ -1,0 +1,103 @@
+@charset "UTF-8";
+html {
+    background-color: aliceblue;
+}
+
+.topnav {
+    width: 100%;
+    background: linear-gradient(to right, #8AEABA, rgba(255, 255, 255, 0.00));
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+/*Author: Abraham Aguilar*/
+
+
+/*Nav*/
+
+.topnav a {
+    text-decoration: none;
+    color: seagreen;
+    padding: 0px 10px;
+    font-size: 18pt;
+}
+
+.topnav a.image {
+    padding: 0px;
+    width: 10%;
+    float: right;
+}
+
+.topnav a img#menuButton {
+    width: 25px;
+    padding: 0px;
+}
+
+
+/*Body*/
+
+body {
+    width: 80%;
+    min-width: 600px;
+    margin: 0px auto;
+    background: radial-gradient(farthest-corner at 0% 0%, #fff2ccff 0%, #4985E8 50%, #3570D3 100%);
+}
+
+
+/*Header*/
+
+header {
+    font-size: 50px;
+    color: rgb(79, 194, 236);
+    font-style: italic;
+    font-family: 'Adamina';
+}
+
+
+/*Article*/
+
+article {
+    padding: 0px 10px;
+}
+
+article.right {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(152, 159, 235);
+    border: 3px solid rgb(110, 120, 244);
+    border-radius: 20px;
+}
+
+
+/*Image*/
+
+
+/* img.logo {
+    display: block;
+    width: 250px;
+} */
+
+img.side {
+    width: 100%;
+}
+
+img.article {
+    width: 30%;
+    float: left;
+    padding: 0px 10px;
+}
+
+
+/*Footer*/
+
+footer {
+    font-family: 'Adamina';
+    font-style: italic;
+    background-color: rgb(90, 169, 220);
+    border: 5px dashed rgb(10, 109, 173);
+    border-radius: 10px;
+    padding: 5px;
+}
