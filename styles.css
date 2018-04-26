@@ -3,14 +3,6 @@ html {
     background-color: aliceblue;
 }
 
-.topnav {
-    width: 100%;
-    background: linear-gradient(to right, #8AEABA, rgba(255, 255, 255, 0.00));
-    display: block;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
 
 /*Author: Abraham Aguilar*/
 
@@ -19,7 +11,7 @@ html {
 
 .topnav a {
     text-decoration: none;
-    color: seagreen;
+    color: #4EE1EA;
     padding: 0px 10px;
     font-size: 18pt;
 }
@@ -35,14 +27,15 @@ html {
     padding: 0px;
 }
 
+img {
+    width: 2in;
+}
+
 
 /*Body*/
 
 body {
-    width: 80%;
-    min-width: 600px;
-    margin: 0px auto;
-    background: radial-gradient(farthest-corner at 0% 0%, #fff2ccff 0%, #4985E8 50%, #3570D3 100%);
+    background: radial-gradient( #AF6C51 0%, #AF6C51 50%, #AF6C51 100%);
 }
 
 
@@ -50,7 +43,6 @@ body {
 
 header {
     font-size: 50px;
-    color: rgb(79, 194, 236);
     font-style: italic;
     font-family: 'Adamina';
 }
@@ -59,16 +51,7 @@ header {
 /*Article*/
 
 article {
-    padding: 0px 10px;
-}
-
-article.right {
-    float: right;
-    width: 20%;
-    padding: 10px;
-    background-color: rgb(152, 159, 235);
-    border: 3px solid rgb(110, 120, 244);
-    border-radius: 20px;
+    padding-right: 40px;
 }
 
 
