@@ -1,32 +1,62 @@
 @charset "UTF-8";
-html {
-  background-color: aliceblue;
-  /*Author:Zyzyc Miranda */
-  .Sidenav {
-    height: 100%;
-    weight: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 60%;
-    transition: 0.5s;
-  }
-  .topnav {
-    background-color: rgba(185, 63, 24, 0.86);
-    overflow: hidden;
-  }
-  .topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: underline;
-    font-size: 16px;
-  }
-  .topnav a:hover {
-    background-color: rgba(193, 35, 35, 0.64);
-    color: black;
-  }
+
+/* Form styles(Abraham) */
+
+form {
+    height: 300px;
+    border: 3px solid royalblue;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: inline;
+    float: right;
+    width: 70%;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset div {
+    margin-left: 1000px;
+}
+
+label {
+    padding: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
+input,
+select,
+textarea {
+    background-color: #FBEC88;
+}
+
+select {
+    margin: 10px 0px;
+}
+
+input:valid:focus {
+    background-color: greenyellow;
+}
+
+input:invalid:focus {
+    background-color: #FE6A6A;
+}
+
+input#submit {
+    background-color: white;
+}
+
+section#box {
+    display: inline-flex;
+    flex-flow: row wrap;
+    padding: 0px 10px;
+}
+
+form div {
+    display: inline-block;
+    width: 40%;
+}
