@@ -40,7 +40,7 @@ index.html
                     <section id="box"><label for="mailBox">Email:</label>
                         <input name="mailBox" id="mailBox" type="email" required placeholder="example@source.com"></section>
                     <section id="box"><label for="phoneBox">Phone Number:</label>
-                        <input name="phoneBox" id="phoneBox" type="text" required pattern="/^\d{3}[-]\d{3}[-]\d{4}$/" placeholder="nnn-nnn-nnnn"></section>
+                        <input name="phoneBox" id="phoneBox" type="text" required pattern="/^\d{6}$/" placeholder="nnn-nnn-nnnn"></section>
                     <section id="box"><label for="reasonBox">Reason for purchase:</label>
                         <textarea name="reasonBox" id="reasonBox" cols="50" rows="10" required placeholder="Explain why you chose to purchase our products."></textarea></section>
                     <section id="box"><label for="productBox">Select a package:</label>
@@ -56,24 +56,26 @@ index.html
 
 
 
-                    <section id="box">
+                    <section id="box contents">
                         <p>Contains:</p>
                         <span></span>
                         <span></span>
+                        <span></span><br><br>
                         <span></span>
                         <span></span>
+                        <span></span><br><br>
                         <span></span>
                         <span></span>
+                        <span></span><br><br>
                         <span></span>
                         <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span></span><br><br>
                         <span></span>
                         <span></span>
                     </section>
-                    <section id="box"><input id="submit" type="submit" value="Submit"></section>
+                    <section id="box">
+                        <input id="submit" type="submit" value="Submit">
+                    </section>
                 </fieldset>
             </form>
         </section>
