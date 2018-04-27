@@ -63,16 +63,6 @@ form div {
     width: 40%;
 }
 
-section#contents {
-    flex-flow: column;
-}
-
-span {
-    padding: 5px 15px 5px;
-    border: 1px solid black;
-    background-color: white;
-}
-
 input#submit {
     width: 75px;
     font-size: 2rem;
