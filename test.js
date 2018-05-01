@@ -2,56 +2,80 @@
 
 // Testing file to create some basic JS code
 
-// var fnBox = document.getElementById("fnBox");
-// var lnBox = document.getElementById("lnBox");
-// var mailBox = document.getElementById("mailBox");
-// var phoneBox = document.getElementById("phoneBox");
-// var productBox = document.getElementById("productBox");
+var fnBox = document.getElementById("fnBox");
+var lnBox = document.getElementById("lnBox");
+var mailBox = document.getElementById("mailBox");
+var phoneBox = document.getElementById("phoneBox");
+var productBox = document.getElementById("productBox");
 // var reasonBox = document.getElementById("reasonBox");
 var generalContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket", "4 Sets of 4 Braces", "3 Flashlight", "2 First Aid Kits", "2 Water Purifiers", "3 Sets of Clothing", "10 Water Bottles"];
 var droughtContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket", "4 Sets of 4 Braces", "3 Flashlight", "2 First Aid Kits", "4 Water Purifiers", "3 Sets of Clothing", "20 Water Bottles", "4 Medium-Duty Tarps"];
 var floodContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket", "4 Sets of 4 Braces", "3 Flashlight", "2 First Aid Kits", "4 Water Purifiers", "3 Sets of Clothing", "20 Water Bottles", "Self-Inflating Life Raft", "6 Life Jackets"];
 var earthquakeContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket", "4 Sets of 4 Braces", "3 Flashlight", "2 First Aid Kits", "4 Water Purifiers", "3 Sets of Clothing", "20 Water Bottles", "Building Supplies", "Propane Tank"];
 
-sessionStorage.setItem("confName", document.getElementById("fnBox") + " " + document.getElementById("lnBox"));
-sessionStorage.setItem("confMail", document.getElementById("mailBox"));
-sessionStorage.setItem("confPhone", document.getElementById("phoneBox"));
-
 window.addEventListener("load", function() {
-    validityTest();
     calcCart();
 
-    // fnBox.onblur = calcCart;
-    // lnBox.onblur = calcCart;
-    // mailBox.onblur = calcCart;
-    // phoneBox.onblur = calcCart;
-    // reasonBox.onblur = calcCart;
+    document.getElementById("submit").onclick = validityTest;
+
+    fnBox.onblur = calcCart;
+    lnBox.onblur = calcCart;
+    mailBox.onblur = calcCart;
+    phoneBox.onblur = calcCart;
+    reasonBox.onblur = calcCart;
     productBox.onchange = calcCart;
 })
 
 // The below funciton needs some bugfixing
 function validityTest() {
-    if (document.getElementById("fnBox").length = 0) {
-        document.getElementById("fnBox").setCustomValidity("Please insert your First Name");
+    if (fnBox.value.length == 0) {
+        fnBox.setCustomValidity("Please insert your First Name");
     } else {
-        document.getElementById("fnBox").setCustomValidity("");
+        fnBox.setCustomValidity("");
     }
+    if (lnBox.value.length == 0) {
+        lnBox.setCustomValidity("Please insert your Last Name");
+    } else {
+        lnBox.setCustomValidity("");
+    }
+    if (mailBox.value.length == 0) {
+        mailBox.setCustomValidity("Please insert your Email Address");
+    } else {
+        mailBox.setCustomValidity("");
+    }
+    if (phoneBox.value.length == 0) {
+        phoneBox.setCustomValidity("Please insert your Phone Number");
+    } else {
+        phoneBox.setCustomValidity("");
+    }
+    // if (fnBox.value.length == 0) {
+    //     fnBox.setCustomValidity("Please insert your First Name");
+    // } else {
+    //     fnBox.setCustomValidity("");
+    // }
 }
 // sessionBox.options[sessionBox.selectedIndex].textContent
 function calcCart() {
     // var cost = document.getElementById("productBox").options[document.getElementById("productBox").selectedIndex].value;
 
-    var packages = document.getElementById("productBox").options[document.getElementById("productBox").selectedIndex];
-    sessionStorage.setItem("confProduct", packages.value);
-    if (packages.value == 275) {
+    var cost = parseInt(productBox.options[productBox.selectedIndex].value);
+    sessionStorage.setItem("confProduct", cost);
+    if (cost == 275) {
         displayContents(generalContents);
-    } else if (packages.value == 750) {
+    } else if (cost == 750) {
         displayContents(droughtContents);
-    } else if (packages.value == 1750) {
+    } else if (cost == 1750) {
         displayContents(floodContents);
-    } else if (packages.value == 3750) {
+    } else if (cost == 3750) {
         displayContents(earthquakeContents);
+    } else {
+        document.getElementsByTagName("span")[1].textContent = "ERROR: Value was not able to be used;";
     }
+
+    sessionStorage.setItem("confName", fnBox.value + " " + lnBox.value);
+    sessionStorage.setItem("confMail", mailBox.value);
+    sessionStorage.setItem("confPhone", phoneBox.value);
+
 }
 
 function displayContents(array) {
