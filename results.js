@@ -38,13 +38,8 @@ function displayContents(array) {
         if (document.getElementsByTagName("span")[i].textContent != array[i]) {
             document.getElementsByTagName("span")[i].style.padding = "0px";
             document.getElementsByTagName("span")[i].style.border = "0px";
-            document.getElementsByTagName("span")[i].style.backgroundColor = "none";
-        } else if (document.getElementsByTagName("span")["id"]) {
-            document.getElementsByTagName("span")[i].style.padding = "0px";
-            document.getElementsByTagName("span")[i].style.border = "0px";
-            document.getElementsByTagName("span")[i].style.backgroundColor = "none";
+            document.getElementsByTagName("span")[i].style.backgroundColor = "rgba(0, 0, 0, 0)";
         }
-
     }
     // This allows for less loading as the function will replace the need for nearly identical blocks of code in calculating the contents.
 }
