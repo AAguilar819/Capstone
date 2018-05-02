@@ -11,7 +11,7 @@ html {
 
 .topnav a {
     text-decoration: none;
-    color: #4EE1EA;
+    color: #FF1FAF;
     padding: 0px 10px;
     font-size: 18pt;
 }
@@ -28,14 +28,15 @@ html {
 }
 
 img {
-    width: 2in;
+    width: 35%;
+    margin: 10px;
 }
 
 
 /*Body*/
 
 body {
-    background: radial-gradient( #AF6C51 0%, #AF6C51 50%, #AF6C51 100%);
+    background: radial-gradient( #F0FFE7 0%, #F0FFE7 50%, #F0FFE7 100%);
 }
 
 
