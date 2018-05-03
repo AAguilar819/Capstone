@@ -1,8 +1,4 @@
 @charset "UTF-8";
-html {
-    background-color: aliceblue;
-}
-
 
 /*Author: Abraham Aguilar*/
 
@@ -11,9 +7,13 @@ html {
 
 .topnav a {
     text-decoration: none;
-    color: #FF1FAF;
+    color: #F05353;
     padding: 0px 10px;
     font-size: 18pt;
+}
+
+a {
+    word-spacing: 20px;
 }
 
 .topnav a.image {
@@ -36,7 +36,7 @@ img {
 /*Body*/
 
 body {
-    background: radial-gradient( #F0FFE7 0%, #F0FFE7 50%, #F0FFE7 100%);
+    background: radial-gradient( #B6E1CF 0%, #B6E1CF 50%, #B6E1CF 100%);
 }
 
 
@@ -46,7 +46,11 @@ header {
     font-size: 50px;
     font-style: italic;
     font-family: 'Adamina';
+    color: #C61056;
 }
+
+
+/* Change the link color to #111 (black) on hover */
 
 
 /*Article*/
@@ -58,20 +62,9 @@ article {
 
 /*Image*/
 
-
-/* img.logo {
-    display: block;
-    width: 250px;
-} */
-
-img.side {
-    width: 100%;
-}
-
-img.article {
-    width: 30%;
-    float: left;
-    padding: 0px 10px;
+img {
+    width: 50%;
+    margin: 10px;
 }
 
 
