@@ -68,7 +68,7 @@ body {
 }
 
 
-/* RESPONSIVE CSS
+/* media queries for responsiveness
 -------------------------------------------------- */
 
 @media (min-width: 40em) {
