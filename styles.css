@@ -1,42 +1,20 @@
 @charset "UTF-8";
 
-/*Author: Abraham Aguilar*/
-
-
-/*Nav*/
-
-.topnav a {
-    text-decoration: none;
-    color: #F05353;
-    padding: 0px 10px;
-    font-size: 18pt;
-}
-
-a {
-    word-spacing: 20px;
-}
-
-.topnav a.image {
-    padding: 0px;
-    width: 10%;
-    float: right;
-}
-
-.topnav a img#menuButton {
-    width: 25px;
-    padding: 0px;
-}
-
-img {
-    width: 35%;
-    margin: 10px;
-}
-
-
 /*Body*/
 
+html {
+    background-color: tomato;
+}
+
 body {
-    background: radial-gradient( #B6E1CF 0%, #B6E1CF 50%, #B6E1CF 100%);
+    r
+}
+
+
+/*Article*/
+
+article {
+    padding-right: 40px;
 }
 
 
@@ -46,17 +24,21 @@ header {
     font-size: 50px;
     font-style: italic;
     font-family: 'Adamina';
-    color: #C61056;
+    color: #EC88ED;
 }
 
 
-/* Change the link color to #111 (black) on hover */
+/*Nav*/
 
+.topnav a {
+    word-spacing: 20px;
+    float: left;
+}
 
-/*Article*/
-
-article {
-    padding-right: 40px;
+.topnav a.image {
+    padding: 0px;
+    width: 10%;
+    float: right;
 }
 
 
