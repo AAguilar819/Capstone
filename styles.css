@@ -3,11 +3,7 @@
 /*Body*/
 
 html {
-    background-color: tomato;
-}
-
-body {
-    r
+    background-color: white;
 }
 
 
@@ -30,15 +26,28 @@ header {
 
 /*Nav*/
 
-.topnav a {
-    word-spacing: 20px;
-    float: left;
+.topnav {
+    overflow: hidden;
+    background-color: black;
 }
 
-.topnav a.image {
-    padding: 0px;
-    width: 10%;
-    float: right;
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: green;
+    color: white;
 }
 
 
