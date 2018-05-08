@@ -3,7 +3,7 @@
 /*Body*/
 
 html {
-    background-color: white;
+    background-color: silver;
 }
 
 
@@ -20,7 +20,7 @@ header {
     font-size: 50px;
     font-style: italic;
     font-family: 'Adamina';
-    color: #EC88ED;
+    color: #26CBBC;
 }
 
 
@@ -41,13 +41,13 @@ header {
 }
 
 .topnav a:hover {
-    background-color: black;
+    background-color: #D22E2E;
     color: white;
 }
 
 .topnav a.active {
-    background-color: green;
-    color: white;
+    background-color: #5765CB;
+    color: #FFFFFF;
 }
 
 
