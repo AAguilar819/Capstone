@@ -2,10 +2,6 @@
 
 /*Body*/
 
-html {
-    background-color: silver;
-}
-
 
 /*Article*/
 
@@ -20,7 +16,7 @@ header {
     font-size: 50px;
     font-style: italic;
     font-family: 'Adamina';
-    color: #26CBBC;
+    color: #306863;
 }
 
 
@@ -28,12 +24,17 @@ header {
 
 .topnav {
     overflow: hidden;
-    background-color: black;
+    background-color: #322D2D;
+}
+
+.box {
+    text-align: right;
+    padding: 10px;
 }
 
 .topnav a {
     float: left;
-    color: white;
+    color: #B2D8DC;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -41,20 +42,25 @@ header {
 }
 
 .topnav a:hover {
-    background-color: #D22E2E;
-    color: white;
+    background-color: #57CB97;
+    color: #44454A;
 }
 
 .topnav a.active {
-    background-color: #5765CB;
-    color: #FFFFFF;
+    background-color: #51B1A6;
+    color: #FAFAFA;
 }
 
 
 /*Image*/
 
 img {
-    width: 50%;
+    width: 40%;
+    margin: 10px;
+}
+
+img.emergancy {
+    width: 40%;
     margin: 10px;
 }
 
