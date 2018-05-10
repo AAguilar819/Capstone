@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* Form styles(Abraham) */
+
+form {
+    height: 24%;
+    border: 3px solid royalblue;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: inline;
+    float: right;
+    width: 70%;
+    min-width: 350px;
+    max-width: 830px;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset div {
+    margin-left: 1000px;
+}
+
+label {
+    padding: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
+input,
+select,
+textarea {
+    background-color: #FBEC88;
+}
+
+select {
+    margin: 10px 0px;
+}
+
+input:valid:focus {
+    background-color: greenyellow;
+}
+
+input:invalid:focus {
+    background-color: #FE6A6A;
+}
+
+input#submit {
+    background-color: white;
+}
+
+section#box {
+    display: inline-flex;
+    flex-flow: row wrap;
+    padding: 0px 10px;
+}
+
+form div {
+    display: inline-block;
+    width: 40%;
+}
+
+input#submit {
+    width: 75px;
+    font-size: 2rem;
+}
