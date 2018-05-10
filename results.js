@@ -3,7 +3,7 @@
 window.addEventListener("load", function() {
     calcCart();
     writeSessionValues();
-    runSubmit();
+    document.getElementById("subButton").onclick = runSubmit();
 })
 
 var generalContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket", "4 Sets of 4 Braces", "3 Flashlight", "2 First Aid Kits", "2 Water Purifiers", "3 Sets of Clothing", "10 Water Bottles"];
@@ -75,7 +75,7 @@ function runSubmit() {
 
 function validateCVC() {
     var cardCVC = document.getElementById("cvc");
-    var creditCard = document.querySelector('input[name="credit"]:checked').value;
+    var creditCard = document.querySelector('input[name="credit"]:checked'); //.value;
     if (cardCVC.validity.valueMissing) {
         cardCVC.setCustomValidity("Enter your CVC number.");
     } else if ((creditCard === "amex") && (/^\d{4}$/.test(cardCVC.value) === false)) {

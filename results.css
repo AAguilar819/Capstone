@@ -93,3 +93,49 @@ input#submit {
         margin-right: 20%;
     }
 }
+
+fieldset#cards label.cardLabel {
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+
+fieldset#cards img {
+    display: inline-block;
+    margin-left: 5px;
+    box-shadow: 0px 0px 10px rgb(124, 92, 54);
+}
+
+fieldset#cards input[type='radio'] {
+    display: inline-block;
+    width: auto;
+    float: none;
+    clear: none;
+}
+
+fieldset#cards {
+    text-align: left;
+    margin-left: 50px;
+}
+
+fieldset#cards span {
+    width: 30px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+fieldset#cards input#cvc {
+    width: 3em;
+}
+
+fieldset#cards input#subButton {
+    display: block;
+    width: 180px;
+    height: 35px;
+    margin: 15px 0px 10px 200px;
+    background-color: rgba(232, 218, 201, 0.8);
+    font-size: 1.3em;
+    border-radius: 20px;
+    float: none;
+}
