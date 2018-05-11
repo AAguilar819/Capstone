@@ -16,7 +16,7 @@ header {
     font-size: 50px;
     font-style: italic;
     font-family: 'Adamina';
-    color: #306863;
+    color: #2867C3;
 }
 
 
@@ -42,12 +42,12 @@ header {
 }
 
 .topnav a:hover {
-    background-color: #57CB97;
-    color: #44454A;
+    background-color: #164C8D;
+    color: #FFFFFF;
 }
 
 .topnav a.active {
-    background-color: #51B1A6;
+    background-color: rgba(29, 157, 42, 0.78);
     color: #FAFAFA;
 }
 
