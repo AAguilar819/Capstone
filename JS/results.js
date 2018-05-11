@@ -119,6 +119,7 @@ function validateNumber() {
 }
 
 function validateCredit() {
+    // Needs Debugging
     var creditCard = document.forms.payment.elements.credit[0];
     if (creditCard.validity.valueMissing) {
         creditCard.setCustomValidity("Select your credit card.");
