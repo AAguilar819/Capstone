@@ -10,6 +10,7 @@ var generalContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket
 var droughtContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket", "4 Sets of 4 Braces", "3 Flashlight", "2 First Aid Kits", "4 Water Purifiers", "3 Sets of Clothing", "20 Water Bottles", "4 Medium-Duty Tarps"];
 var floodContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket", "4 Sets of 4 Braces", "3 Flashlight", "2 First Aid Kits", "4 Water Purifiers", "3 Sets of Clothing", "20 Water Bottles", "Self-Inflating Life Raft", "6 Life Jackets"];
 var earthquakeContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket", "4 Sets of 4 Braces", "3 Flashlight", "2 First Aid Kits", "4 Water Purifiers", "3 Sets of Clothing", "20 Water Bottles", "Building Supplies", "Propane Tank"];
+var fireContents = ["4 MREs", "4 Road Flare", "2 Flint and Steel", "4 Blanket", "4 Sets of 4 Braces", "3 Flashlight", "2 First Aid Kits", "4 Water Purifiers", "3 Sets of Clothing", "20 Water Bottles", "4 Full Water Canteens", "4 Large Fire Blankets", "4 Fire Gloves", "10 Rags"];
 
 var packages = sessionStorage.getItem("confProduct");
 var name = sessionStorage.getItem("confName");
@@ -27,6 +28,8 @@ function calcCart() {
         displayContents(floodContents);
     } else if (packages == 3750) {
         displayContents(earthquakeContents);
+    } else if (packages == 800) {
+        displayContents(fireContents);
     }
 }
 
